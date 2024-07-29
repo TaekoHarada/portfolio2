@@ -25,17 +25,22 @@ const projects = [
 
 const ProjectsSection: React.FC = () => {
   return (
-    <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
-      {projects.map((project) => (
-        <li key={project.id}>
-          <ProjectCard
-            title={project.title}
-            description={project.description}
-            imageUrl="/images/project1.png"
-          />
-        </li>
-      ))}
-    </ul>
+    <section
+      id="Projects."
+      className="project-section sm:h-screen grid place-items-center"
+    >
+      <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+        {projects.map((project) => (
+          <li key={project.id}>
+            <ProjectCard
+              title={project.title}
+              description={project.description}
+              imageUrl="/images/project1.png"
+            />
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };
 

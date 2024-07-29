@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}

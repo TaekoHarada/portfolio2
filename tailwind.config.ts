@@ -20,6 +20,15 @@ const config: Config = {
         btnBlue: "#1e90ff",
         textBoxBorder: "#47a4ff",
       },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        "loop-scroll": "loop-scroll 60s linear infinite",
+      },
     },
   },
   plugins: [],
