@@ -39,7 +39,8 @@ const Contact: React.FC = () => {
       className="project-section sm:h-screen grid place-items-center"
     >
       <div className="w-full sm:w-4/5">
-        <h1>Contact Page</h1>
+        <h2 className="text-xl w-full text-center my-10">Contact</h2>
+
         <form className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label

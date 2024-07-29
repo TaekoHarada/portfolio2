@@ -11,8 +11,11 @@ import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="hero-section sm:h-screen grid place-items-center">
-      <div className="grid grid-cols-1 lg:grid-cols-12">
+    <section
+      id="Hero."
+      className="hero-section sm:h-screen grid place-items-center"
+    >
+      <div className="grid grid-cols-1 lg:grid-cols-12  px-10 sm:px-20">
         <div className="col-span-7 place-self-center">
           <h1 className="text-customGray text-2xl sm:text-3xl lg:text-4xl mb-5 font-semibold">
             Hi, I am Taeko.

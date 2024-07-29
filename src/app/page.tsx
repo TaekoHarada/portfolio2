@@ -7,9 +7,9 @@ import ProjectsSection from "./components/ProjectsSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-white">
+    <main className="flex min-h-screen flex-col bg-gray-50">
       <Navbar />
-      <div className="container  mx-auto px-20 py-5 mt-20 sm:mt-0 ">
+      <div className="container mx-auto px-auto py-5 mt-20 sm:mt-0 ">
         <HeroSection />
         <ProjectsSection />
         <NewsSection />

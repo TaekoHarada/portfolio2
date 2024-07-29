@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-white bg-opacity-90 border border-t-1 border-gray-300">
       <div className="flex flex-wrap items-center justify-between mx-auto px-5 py-2">
-        <Link href="/">
+        <Link href="#Hero.">
           <div className="text-gray-800 hover:text-blue-500">
             <span className="text-lg font-semibold">Taeko H.</span>
             <span className="ml-3 italic">Software Developer</span>
