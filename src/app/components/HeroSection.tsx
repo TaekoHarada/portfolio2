@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="col-span-7 place-self-center">
           <h1 className="text-customGray text-2xl sm:text-3xl lg:text-4xl mb-5 font-semibold">
-            Hi, I'm Taeko.
+            Hi, I am Taeko.
           </h1>
           <p className="text-customGray text-lg lg:text-xl sm:mt-8 sm:mb-12">
             I’m excited about <b>mobile development</b> and keen to enhance my
