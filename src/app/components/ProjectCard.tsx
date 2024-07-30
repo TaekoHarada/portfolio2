@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 interface ProjectCardProps {
   title: string;
@@ -19,32 +21,27 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   gitHubLink,
 }) => {
   return (
-    <div className="project-card relative overflow-hidden hover:scale-105 transform transition-all duration-300">
-      <div
-        className="h-48 w-56 md:h-48 md:w-80 relative group"
-        style={{ background: `url(${imageUrl})`, backgroundSize: "cover" }}
-      >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-75 transition-all duration-500">
-          <div className="text-white grid place-items-center pt-3">
-            <Link href={appLink} target="_blank">
-              <p className="project-card_description p-5 hover:underline">
-                {description}
-              </p>
-            </Link>
-            <Link href={gitHubLink} target="_blank">
-              <img
-                src="/images/github-mark-white.png"
-                alt="Github mark"
-                className="w-10 h-10 opacity-90 hover:opacity-100 transition-all duration-500"
-              />
-            </Link>
-          </div>
-        </div>
-      </div>
+    <div className="project-card relative hover:scale-105 transform transition-all duration-300">
       <div className="text-customGray grid place-items-center my-5">
-        <Link href={appLink} target="_blank">
-          <h3 className="font-bold hover:underline">{title}</h3>
-        </Link>
+        <img
+          src={imageUrl}
+          alt={title}
+          className="w-[180px] h-full sm:w-[300px] sm:h-full lg:w-[330px] lg:h-full"
+        ></img>
+
+        <div className="mt-3 mb-3 font-bold hover:underline">
+          <Link href={appLink} target="_blank">
+            <p>{title}</p>
+          </Link>
+        </div>
+        <div className="w-8 mr-2 text-gray-800 hover:opacity-70">
+          <Link href={gitHubLink} target="_blank">
+            <FontAwesomeIcon icon={faGithub} />
+          </Link>
+        </div>
+        <div className="mt-3 hover:underline">
+          <p className="px-10 text-center">{description}</p>
+        </div>
       </div>
     </div>
   );

@@ -4,11 +4,6 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 
-// interface HeroSectionProps {
-//   title: string;
-//   subtitle: string;
-// }
-
 const HeroSection: React.FC = () => {
   return (
     <section
@@ -28,18 +23,24 @@ const HeroSection: React.FC = () => {
           </p>
           <div className="flex flex-wrap  items-center mt-5">
             <div className="mr-5">
-              <button className="bg-btnBlue hover:opacity-85 text-white px-5 py-2 rounded-lg">
-                Download Resume
-              </button>
+              <Link
+                href="./docs/Resume-Taeko-Harada.pdf"
+                target="_blank"
+                rel="Resume-Taeko-Harada"
+              >
+                <div className="bg-btnBlue hover:opacity-85 text-white px-5 py-2 rounded-lg">
+                  Download Resume
+                </div>
+              </Link>
             </div>
             <div className="flex mt-3 sm:mt-0">
               <div className="w-8 mr-2 text-gray-800 hover:opacity-70">
-                <Link href="/">
+                <Link href="https://www.linkedin.com/in/taeko-harada/">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </Link>
               </div>
               <div className="w-8 mr-2 text-gray-800 hover:opacity-70">
-                <Link href="/">
+                <Link href="https://github.com/TaekoHarada">
                   <FontAwesomeIcon icon={faSquareGithub} />
                 </Link>
               </div>
