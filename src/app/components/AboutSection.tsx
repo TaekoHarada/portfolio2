@@ -68,7 +68,7 @@ const AboutSection: React.FC = () => {
               </li>
               <li className="mb-2">
                 Applied Mathematics: <br />
-                Bachelor of Science at Osaka Women's University
+                Bachelor of Science at Osaka Women&apos;s University
               </li>
             </ul>
           </div>
