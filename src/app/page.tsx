@@ -1,3 +1,4 @@
+import AboutSection from "./components/AboutSection";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
@@ -12,6 +13,7 @@ export default function Home() {
       <div className="container mx-auto px-auto py-5 mt-20 sm:mt-0 ">
         <HeroSection />
         <ProjectsSection />
+        <AboutSection />
         <NewsSection />
         <Contact />
       </div>

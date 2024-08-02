@@ -13,13 +13,16 @@ const HeroSection: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12  px-10 sm:px-20">
         <div className="col-span-7 place-self-center">
           <h1 className="text-customGray text-2xl sm:text-3xl lg:text-4xl mb-5 font-semibold">
-            Hi, I am Taeko.
+            I am Taeko, a coding lover.
           </h1>
           <p className="text-customGray text-lg lg:text-xl sm:mt-8 sm:mb-12">
-            I’m excited about <b>mobile development</b> and keen to enhance my
-            app-building skills. As a Software Development student in Calgary, I
-            bring experience from Japan as a system admin, web designer, Flash
-            developer, and system architect.
+            I have experience in Japan as a system administrator, web designer,
+            Flash developer, and system architect. Currently, I am enrolled in
+            Software Development at SAIT in Calgary.
+            <br />I have found that I am excited about <b>
+              mobile development
+            </b>{" "}
+            and keen to enhance my app-building skills.
           </p>
           <div className="flex flex-wrap  items-center mt-5">
             <div className="mr-5">
@@ -35,12 +38,20 @@ const HeroSection: React.FC = () => {
             </div>
             <div className="flex mt-3 sm:mt-0">
               <div className="w-8 mr-2 text-gray-800 hover:opacity-70">
-                <Link href="https://www.linkedin.com/in/taeko-harada/">
+                <Link
+                  href="https://www.linkedin.com/in/taeko-harada/"
+                  target="_blank"
+                  rel="LindedIn Taeko Harada"
+                >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </Link>
               </div>
               <div className="w-8 mr-2 text-gray-800 hover:opacity-70">
-                <Link href="https://github.com/TaekoHarada">
+                <Link
+                  href="https://github.com/TaekoHarada"
+                  target="_blank"
+                  rel="GitHub Taeko Harada"
+                >
                   <FontAwesomeIcon icon={faSquareGithub} />
                 </Link>
               </div>
