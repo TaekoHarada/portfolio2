@@ -13,10 +13,10 @@ const NewsSection: React.FC = () => {
     const fetchNews = async () => {
       try {
         const feed = await parser.parseURL(
-          `https://www.wired.com/feed/category/business/latest/rss`
+          `https://www.cnbc.com/id/19854910/device/rss/rss.html`
         );
         setNews(feed.items);
-        // console.log("Fetched news:", feed.items);
+        console.log("Fetched news:", feed.items);
       } catch (err) {
         console.error("Error fetching RSS feed:", err);
       }
