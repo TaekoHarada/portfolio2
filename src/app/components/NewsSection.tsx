@@ -18,7 +18,7 @@ const NewsSection: React.FC = () => {
           `https://www.wired.com/feed/category/business/latest/rss`
         );
         setNews(feed.items);
-        console.log("Fetched news:", feed.items[0].dc);
+        console.log("Fetched news:", feed.items);
       } catch (err) {
         console.error("Error fetching RSS feed:", err);
       }
@@ -34,24 +34,25 @@ const NewsSection: React.FC = () => {
           Tech News
         </div>
         <div>TEST</div>
-        <ul>
-          {news.map((item) => (
+
+        {news.map((item, index) => (
+          <div key={index}>
             <Link href={item.link} target="_blank">
-              <div key={item.id} className="text-customGray">
+              <div className="text-customGray">
                 <h3 className="project-card__title font-bold text-lg">
                   {item.title}
                 </h3>
                 <p className="project-card__description mt-3">{item.content}</p>
               </div>
             </Link>
-          ))}
-        </ul>
+          </div>
+        ))}
 
         <div className="relative w-full overflow-x-auto">
           <div className="flex group">
             <ul className="animate-loop-scroll flex group-hover:paused">
-              {news.map((item) => (
-                <li key={item.id}>
+              {news.map((item, index) => (
+                <li key={index}>
                   <NewsCard
                     title={item.title}
                     content={item.content}
@@ -60,9 +61,10 @@ const NewsSection: React.FC = () => {
                 </li>
               ))}
             </ul>
+
             <ul className="animate-loop-scroll flex group-hover:paused">
-              {news.map((item) => (
-                <li key={item.id}>
+              {news.map((item, index) => (
+                <li key={index}>
                   <NewsCard
                     title={item.title}
                     content={item.content}
