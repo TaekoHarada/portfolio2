@@ -5,21 +5,12 @@ interface NewsCardProps {
   title: string;
   content: string;
   newsUrl: string;
-  imageUrl: string;
 }
 
-const NewsCard: React.FC<NewsCardProps> = ({
-  title,
-  content,
-  newsUrl,
-  imageUrl,
-}) => {
+const NewsCard: React.FC<NewsCardProps> = ({ title, content, newsUrl }) => {
   return (
     <div className="bg-white news-card relative overflow-hidden hover:scale-105 transform transition-all duration-300 pt-10 pb-20 px-10 shadow">
-      <div
-        className="h-48 w-48 sm:w-64 sm:h-56 rounded-t-xl relative group"
-        style={{ background: `url(${imageUrl})`, backgroundSize: "cover" }}
-      >
+      <div className="h-48 w-48 sm:w-64 sm:h-56 rounded-t-xl relative group">
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full">
           <Link href={newsUrl} target="_blank">
             <div className="text-customGray">

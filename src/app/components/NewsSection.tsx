@@ -40,11 +40,6 @@ const NewsSection: React.FC = () => {
                     title={item.title}
                     content={item.content}
                     newsUrl={item.link}
-                    imageUrl={
-                      item["media:thumbnail"]
-                        ? item["media:thumbnail"]["url"]
-                        : null
-                    }
                   />
                 </li>
               ))}
@@ -56,11 +51,6 @@ const NewsSection: React.FC = () => {
                     title={item.title}
                     content={item.content}
                     newsUrl={item.link}
-                    imageUrl={
-                      item["media:thumbnail"]
-                        ? item["media:thumbnail"]["url"]
-                        : null
-                    }
                   />
                 </li>
               ))}
