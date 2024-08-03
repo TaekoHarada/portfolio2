@@ -37,7 +37,7 @@ const NewsSection: React.FC = () => {
         <ul>
           {news.map((item) => (
             <Link href={item.newsUrl} target="_blank">
-              <div className="text-customGray">
+              <div key={item.id} className="text-customGray">
                 <h3 className="project-card__title font-bold text-lg">
                   {item.title}
                 </h3>
