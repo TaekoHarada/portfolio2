@@ -35,8 +35,8 @@ const NewsSection: React.FC = () => {
         </div>
         <div>TEST</div>
 
-        {news.map((item) => (
-          <div key={item.id || item.link}>
+        {news.map((item, index) => (
+          <div key={index}>
             <Link href={item.link} target="_blank">
               <div className="text-customGray">
                 <h3 className="project-card__title font-bold text-lg">
@@ -47,7 +47,7 @@ const NewsSection: React.FC = () => {
             </Link>
           </div>
         ))}
-        {/* 
+
         <div className="relative w-full overflow-x-auto">
           <div className="flex group">
             <ul className="animate-loop-scroll flex group-hover:paused">
@@ -74,7 +74,7 @@ const NewsSection: React.FC = () => {
               ))}
             </ul>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
