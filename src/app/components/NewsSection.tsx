@@ -6,26 +6,39 @@ import NewsCard from "./NewsCard";
 
 import Link from "next/link";
 
-const NewsSection: React.FC = () => {
-  const [news, setNews] = useState<{ [key: string]: any }[]>([]);
+interface NewsItem {
+  title: string;
+  link: string;
+  content: string;
+  id: string;
+}
 
-  useEffect(() => {
-    const parser = new Parser();
+interface NewsSectionProps {
+  news: NewsItem[];
+}
 
-    const fetchNews = async () => {
-      try {
-        const feed = await parser.parseURL(
-          `https://www.wired.com/feed/category/business/latest/rss`
-        );
-        setNews(feed.items);
-        console.log("Fetched news:", feed.items);
-      } catch (err) {
-        console.error("Error fetching RSS feed:", err);
-      }
-    };
+const NewsSection: React.FC<NewsSectionProps> = ({ news }) => {
+  const LIMIT = 5; // Number of items to display
 
-    fetchNews();
-  }, []);
+  // const [news, setNews] = useState<{ [key: string]: any }[]>([]);
+
+  // useEffect(() => {
+  //   const parser = new Parser();
+
+  //   const fetchNews = async () => {
+  //     try {
+  //       const feed = await parser.parseURL(
+  //         `https://www.wired.com/feed/category/business/latest/rss`
+  //       );
+  //       setNews(feed.items);
+  //       console.log("Fetched news:", feed.items);
+  //     } catch (err) {
+  //       console.error("Error fetching RSS feed:", err);
+  //     }
+  //   };
+
+  //   fetchNews();
+  // }, []);
 
   return (
     <section id="TechNews." className="sm:h-screen py-20">
@@ -35,12 +48,12 @@ const NewsSection: React.FC = () => {
         </div>
         <div>TEST</div>
 
-        {news.slice(0, 5).map((item, index) => (
-          <div key={index}>
+        {news.slice(0, LIMIT).map((item) => (
+          <div key={item.id || item.link}>
             <Link href={item.link} target="_blank">
               <div className="text-customGray">
                 <h3 className="project-card__title font-bold text-lg">
-                  Title: {item.title}
+                  {item.title}
                 </h3>
                 <p className="project-card__description mt-3">{item.content}</p>
               </div>
@@ -51,8 +64,8 @@ const NewsSection: React.FC = () => {
         <div className="relative w-full overflow-x-auto">
           <div className="flex group">
             <ul className="animate-loop-scroll flex group-hover:paused">
-              {news.map((item, index) => (
-                <li key={index}>
+              {news.slice(0, LIMIT).map((item) => (
+                <li key={item.id || item.link}>
                   <NewsCard
                     title={item.title}
                     content={item.content}
@@ -63,8 +76,8 @@ const NewsSection: React.FC = () => {
             </ul>
 
             <ul className="animate-loop-scroll flex group-hover:paused">
-              {news.map((item, index) => (
-                <li key={index}>
+              {news.slice(0, LIMIT).map((item) => (
+                <li key={item.id || item.link}>
                   <NewsCard
                     title={item.title}
                     content={item.content}
