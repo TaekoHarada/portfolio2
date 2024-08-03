@@ -33,6 +33,7 @@ const NewsSection: React.FC = () => {
         <div className="flex flex-col justify-end text-xl w-full text-center mb-10  sm:h-48">
           Tech News
         </div>
+        <div>TEST</div>
         <ul>
           {news.map((item) => (
             <Link href={item.newsUrl} target="_blank">
