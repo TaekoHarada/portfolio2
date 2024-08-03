@@ -40,7 +40,7 @@ const NewsSection: React.FC = () => {
             <Link href={item.link} target="_blank">
               <div className="text-customGray">
                 <h3 className="project-card__title font-bold text-lg">
-                  {item.title}
+                  Title: {item.title}
                 </h3>
                 <p className="project-card__description mt-3">{item.content}</p>
               </div>
