@@ -4,8 +4,6 @@ import React, { useState, useEffect } from "react";
 import Parser from "rss-parser";
 import NewsCard from "./NewsCard";
 
-import Link from "next/link";
-
 const NewsSection: React.FC = () => {
   const [news, setNews] = useState<{ [key: string]: any }[]>([]);
 
@@ -18,7 +16,7 @@ const NewsSection: React.FC = () => {
           `https://www.wired.com/feed/category/business/latest/rss`
         );
         setNews(feed.items);
-        console.log("Fetched news:", feed.items);
+        // console.log("Fetched news:", feed.items);
       } catch (err) {
         console.error("Error fetching RSS feed:", err);
       }
