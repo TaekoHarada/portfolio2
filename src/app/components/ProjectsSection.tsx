@@ -33,7 +33,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <section
       id="Projects."
-      className="project-section sm:h-screen grid place-items-center"
+      className="project-section sm:h-screen grid place-items-center pt-10 lg:pt-0"
     >
       <div>
         <h2 className="text-xl w-full text-center my-10">Projects</h2>

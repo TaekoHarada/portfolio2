@@ -13,7 +13,7 @@ const AboutSection: React.FC = () => {
   return (
     <section
       id="About."
-      className="about-section sm:h-screen grid place-items-center"
+      className="about-section sm:h-screen grid place-items-center pt-10 lg:pt-0"
     >
       <div>
         <h2 className="text-xl w-full text-center my-10">About me</h2>

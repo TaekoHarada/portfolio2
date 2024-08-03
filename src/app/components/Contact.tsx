@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
   return (
     <section
       id="Contact."
-      className="project-section sm:h-screen grid place-items-center"
+      className="project-section sm:h-screen grid place-items-center pt-10 lg:pt-0"
     >
       <div className="w-full sm:w-4/5">
         <h2 className="text-xl w-full text-center my-10">Contact</h2>

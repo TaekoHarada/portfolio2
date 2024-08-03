@@ -39,9 +39,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="mt-3 mb-3">
           <p className="px-10 text-center">{description}</p>
         </div>
-        <div className="w-8 text-gray-800 hover:opacity-70">
+        <div className=" text-gray-800 hover:opacity-70">
           <Link href={gitHubLink} target="_blank">
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faGithub} size="2x" />
           </Link>
         </div>
       </div>
