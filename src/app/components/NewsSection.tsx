@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import Parser from "rss-parser";
 import NewsCard from "./NewsCard";
 
+import Link from "next/link";
+
 const NewsSection: React.FC = () => {
   const [news, setNews] = useState<{ [key: string]: any }[]>([]);
 
@@ -33,13 +35,14 @@ const NewsSection: React.FC = () => {
         </div>
         <ul>
           {news.map((item) => (
-            <li key={item.id}>
-              <NewsCard
-                title={item.title}
-                content={item.content}
-                newsUrl={item.link}
-              />
-            </li>
+            <Link href={item.newsUrl} target="_blank">
+              <div className="text-customGray">
+                <h3 className="project-card__title font-bold text-lg">
+                  {item.title}
+                </h3>
+                <p className="project-card__description mt-3">{item.content}</p>
+              </div>
+            </Link>
           ))}
         </ul>
 
