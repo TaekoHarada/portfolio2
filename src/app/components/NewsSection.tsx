@@ -33,20 +33,6 @@ const NewsSection: React.FC = () => {
         <div className="flex flex-col justify-end text-xl w-full text-center mb-10  sm:h-48">
           Tech News
         </div>
-        <div>TEST</div>
-
-        {news.slice(0, 5).map((item, index) => (
-          <div key={index}>
-            <Link href={item.link} target="_blank">
-              <div className="text-customGray">
-                <h3 className="project-card__title font-bold text-lg">
-                  Title: {item.title}
-                </h3>
-                <p className="project-card__description mt-3">{item.content}</p>
-              </div>
-            </Link>
-          </div>
-        ))}
 
         <div className="relative w-full overflow-x-auto">
           <div className="flex group">
