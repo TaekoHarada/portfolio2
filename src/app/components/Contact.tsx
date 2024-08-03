@@ -2,6 +2,9 @@
 import { useEffect, useState } from "react";
 import React from "react";
 import ClipLoader from "react-spinners/ClipLoader";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Contact: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -149,13 +152,47 @@ const Contact: React.FC = () => {
               </div>
               <button
                 onClick={handleReload}
-                className="underline mt-4 font-medium py-2 px-4 rounded"
+                className="underline mt-4 font-medium py-2 px-4 rounded hover:opacity-70"
               >
                 Send another message.
               </button>
             </>
           )}
         </form>
+
+        <div className="flex flex-wrap  items-center mt-5">
+          <div className="mr-3">
+            <Link
+              href="./docs/Resume-Taeko-Harada.pdf"
+              target="_blank"
+              rel="Resume-Taeko-Harada"
+            >
+              <div className="underline decoration-gray-400 hover:opacity-50 px-5 py-2">
+                Download Resume
+              </div>
+            </Link>
+          </div>
+          <div className="flex mt-3 sm:mt-0">
+            <div className="mr-2 text-gray-800 hover:opacity-70">
+              <Link
+                href="https://www.linkedin.com/in/taeko-harada/"
+                target="_blank"
+                rel="LindedIn Taeko Harada"
+              >
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              </Link>
+            </div>
+            <div className="mr-2 text-gray-800 hover:opacity-70">
+              <Link
+                href="https://github.com/TaekoHarada"
+                target="_blank"
+                rel="GitHub Taeko Harada"
+              >
+                <FontAwesomeIcon icon={faSquareGithub} size="2x" />
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

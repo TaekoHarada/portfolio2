@@ -15,7 +15,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <div className="news-card relative rounded-xl overflow-hidden hover:scale-105 transform transition-all duration-300 p-5">
+    <div className="bg-white news-card relative overflow-hidden hover:scale-105 transform transition-all duration-300 pt-10 pb-20 px-10 shadow">
       <div
         className="h-48 w-48 sm:w-64 sm:h-56 rounded-t-xl relative group"
         style={{ background: `url(${imageUrl})`, backgroundSize: "cover" }}

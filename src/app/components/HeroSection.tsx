@@ -19,9 +19,7 @@ const HeroSection: React.FC = () => {
             I have experience in Japan as a system administrator, web designer,
             Flash developer, and system architect. Currently, I am enrolled in
             Software Development at SAIT in Calgary.
-            <br />I have found that I am excited about <b>
-              mobile development
-            </b>{" "}
+            <br />I have found that I am excited about <b>mobile development</b>
             and keen to enhance my app-building skills.
           </p>
           <div className="flex flex-wrap  items-center mt-5">
@@ -37,22 +35,22 @@ const HeroSection: React.FC = () => {
               </Link>
             </div>
             <div className="flex mt-3 sm:mt-0">
-              <div className="w-8 mr-2 text-gray-800 hover:opacity-70">
+              <div className="mr-2 text-gray-800 hover:opacity-70">
                 <Link
                   href="https://www.linkedin.com/in/taeko-harada/"
                   target="_blank"
                   rel="LindedIn Taeko Harada"
                 >
-                  <FontAwesomeIcon icon={faLinkedin} />
+                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
                 </Link>
               </div>
-              <div className="w-8 mr-2 text-gray-800 hover:opacity-70">
+              <div className="mr-2 text-gray-800 hover:opacity-70">
                 <Link
                   href="https://github.com/TaekoHarada"
                   target="_blank"
                   rel="GitHub Taeko Harada"
                 >
-                  <FontAwesomeIcon icon={faSquareGithub} />
+                  <FontAwesomeIcon icon={faSquareGithub} size="2x" />
                 </Link>
               </div>
             </div>
