@@ -31,6 +31,18 @@ const NewsSection: React.FC = () => {
         <div className="flex flex-col justify-end text-xl w-full text-center mb-10  sm:h-48">
           Tech News
         </div>
+        <ul>
+          {news.map((item) => (
+            <li key={item.id}>
+              <NewsCard
+                title={item.title}
+                content={item.content}
+                newsUrl={item.link}
+              />
+            </li>
+          ))}
+        </ul>
+
         <div className="relative w-full overflow-x-auto">
           <div className="flex group">
             <ul className="animate-loop-scroll flex group-hover:paused">
