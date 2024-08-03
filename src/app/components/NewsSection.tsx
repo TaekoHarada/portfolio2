@@ -35,7 +35,7 @@ const NewsSection: React.FC = () => {
         </div>
         <div>TEST</div>
 
-        {news.map((item, index) => (
+        {news.slice(0, 5).map((item, index) => (
           <div key={index}>
             <Link href={item.link} target="_blank">
               <div className="text-customGray">
