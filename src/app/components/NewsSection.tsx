@@ -22,6 +22,17 @@ const NewsSection: React.FC = () => {
       }
     };
 
+    // const fetchNews = async () => {
+    //   try {
+    //     const response = await fetch("/api/proxy-rss");
+    //     const data = await response.json();
+    //     // Process the RSS feed data
+    //     console.log("Fetched RSS feed:", data);
+    //   } catch (err) {
+    //     console.error("Error fetching RSS feed:", err);
+    //   }
+    // };
+
     fetchNews();
   }, []);
 

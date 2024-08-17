@@ -12,17 +12,17 @@ const HeroSection: React.FC = () => {
     >
       <div className="grid grid-cols-1 lg:grid-cols-12  px-10 sm:px-20">
         <div className="col-span-7 place-self-center">
-          <h1 className="text-customGray text-2xl sm:text-3xl lg:text-4xl mb-5 font-semibold">
+          <h1 className="text-customGray text-2xl sm:text-3xl lg:text-4xl mb-5 font-semibold fadeLeft">
             I am Taeko, a coding lover.
           </h1>
-          <p className="text-customGray text-lg lg:text-xl sm:mt-8 sm:mb-12">
+          <p className="text-customGray text-lg lg:text-xl sm:mt-8 sm:mb-12 fadeLeft">
             I have experience in Japan as a system administrator, web designer,
             Flash developer, and system architect. Currently, I am enrolled in
             Software Development at SAIT in Calgary.
             <br />I have found that I am excited about <b>mobile development</b>
             and keen to enhance my app-building skills.
           </p>
-          <div className="flex flex-wrap  items-center mt-5">
+          <div className="flex flex-wrap  items-center mt-5 fadeLeft">
             <div className="mr-5">
               <Link
                 href="./docs/Resume-Taeko-Harada.pdf"
@@ -56,7 +56,7 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-5 place-self-center m-10 lg:m-0">
+        <div className="col-span-5 place-self-center m-10 lg:m-0 fadeIn">
           <div className="rounded-full bg-[#eef9ff] p-2">
             <img
               src="/images/portrait.png"
