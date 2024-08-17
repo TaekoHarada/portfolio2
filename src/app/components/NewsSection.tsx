@@ -39,7 +39,7 @@ const NewsSection: React.FC = () => {
   return (
     <section id="TechNews." className="sm:h-screen py-20">
       <div>
-        <div className="flex flex-col justify-end text-xl w-full text-center mb-10  sm:h-48">
+        <div className="flex flex-col justify-end text-2xl bold w-full text-center mb-10  sm:h-48">
           Tech News
         </div>
 

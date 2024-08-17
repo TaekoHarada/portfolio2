@@ -36,7 +36,7 @@ const ProjectsSection: React.FC = () => {
       className="project-section sm:h-screen grid place-items-center pt-10 lg:pt-0"
     >
       <div>
-        <h2 className="text-xl w-full text-center my-10">Projects</h2>
+        <h2 className="text-2xl w-full text-center my-10 bold">Projects</h2>
         <div className=" rounded-xl">
           <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
             {projects.map((project) => (

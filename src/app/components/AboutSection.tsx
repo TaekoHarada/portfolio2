@@ -16,7 +16,7 @@ const AboutSection: React.FC = () => {
       className="about-section sm:h-screen grid place-items-center pt-10 lg:pt-0"
     >
       <div>
-        <h2 className="text-xl w-full text-center my-10">About me</h2>
+        <h2 className="text-2xl w-full text-center my-10 bold">About me</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-12">
           <div className="bg-white rounded-lg shadow p-10 col-span-7 lg:mr-5">
@@ -45,10 +45,10 @@ const AboutSection: React.FC = () => {
               <div className="text-lg">Skills</div>
             </div>
             <ul className="mt-5 ml-7">
-              <li className="mb-2">JavaScript, TypeScript (React, Next.js)</li>
-              <li className="mb-2">CSS (Tailwind, Bootstrap)</li>
+              <li className="mb-2">JavaScript, TypeScript - React, Next.js</li>
+              <li className="mb-2">CSS - Tailwind, Bootstrap</li>
               <li className="mb-2">Python, C#, Java</li>
-              <li className="mb-2">Kotlin</li>
+              <li className="mb-2">Kotlin - Jetpack Compose</li>
             </ul>
           </div>
         </div>
@@ -63,14 +63,14 @@ const AboutSection: React.FC = () => {
             </div>
             <ul className="mt-5 ml-7">
               <li className="mb-2">
-                <p>Software Development:</p>
-                <p className="pl-8">2-year Diploma at SAIT</p>
+                <p>Software Development: 2-year Diploma</p>
+                <p className="pl-10">
+                  at Southern Alberta Institute of Technology (SAIT)
+                </p>
               </li>
               <li className="mb-2">
-                <p>Applied Mathematics:</p>
-                <p className="pl-8">
-                  Bachelor of Science at Osaka Women&apos;s University
-                </p>
+                <p>Applied Mathematics: Bachelor of Science</p>
+                <p className="pl-10">at Osaka Women&apos;s University</p>
               </li>
             </ul>
           </div>

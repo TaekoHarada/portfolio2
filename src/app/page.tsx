@@ -26,7 +26,7 @@ export default function Home() {
   // console.log("Fetched news:", feed);
 
   return (
-    <main className="flex min-h-screen flex-col bg-gray-50">
+    <main className="flex min-h-screen flex-col bg-stone-100">
       <Navbar />
       <div className="container mx-auto px-auto py-5 mt-20 sm:mt-0 ">
         <HeroSection />

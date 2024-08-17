@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
                 target="_blank"
                 rel="Resume-Taeko-Harada"
               >
-                <div className="bg-btnBlue hover:opacity-85 text-white px-5 py-2 rounded-lg">
+                <div className="bg-btnBlue hover:opacity-85 text-white px-5 py-2 rounded-lg border">
                   Download Resume
                 </div>
               </Link>
@@ -57,7 +57,7 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
         <div className="col-span-5 place-self-center m-10 lg:m-0 fadeIn">
-          <div className="rounded-full bg-[#eef9ff] p-2">
+          <div className="rounded-full bg-[#e1f0ff] bg-opacity-70 p-3">
             <img
               src="/images/portrait.png"
               alt="My portrait"

@@ -7,6 +7,7 @@ import MenuOverlay from "./MenuOverlay";
 
 // Menu items
 const menuItems = [
+  { path: "#Hero.", title: "Home." },
   { path: "#Projects.", title: "Projects." },
   { path: "#About.", title: "About." },
   { path: "#TechNews.", title: "Tech News." },
