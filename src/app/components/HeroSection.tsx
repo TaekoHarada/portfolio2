@@ -16,11 +16,13 @@ const HeroSection: React.FC = () => {
             I am Taeko, a coding lover.
           </h1>
           <p className="text-customGray text-lg lg:text-xl sm:mt-8 sm:mb-12 fadeLeft">
-            I have experience in Japan as a system administrator, web designer,
-            Flash developer, and system architect. Currently, I am enrolled in
-            Software Development at SAIT in Calgary.
-            <br />I have found that I am excited about <b>mobile development</b>
-            and keen to enhance my app-building skills.
+            I have experience as a system administrator, web designer, Flash
+            developer, and system architect in Japan. <br />
+            Currently, I am studying Software Development at SAIT in Calgary,
+            Canada.
+            <br />I have discovered a passion for{" "}
+            <span className="font-semibold">mobile development</span> and keen
+            to enhance my app-building skills.
           </p>
           <div className="flex flex-wrap  items-center mt-5 fadeLeft">
             <div className="mr-5">
@@ -29,8 +31,22 @@ const HeroSection: React.FC = () => {
                 target="_blank"
                 rel="Resume-Taeko-Harada"
               >
-                <div className="bg-btnBlue hover:opacity-85 text-white px-5 py-2 rounded-lg border">
-                  Download Resume
+                <div className="bg-btnBlue hover:opacity-85 text-white px-5 py-2 rounded-lg border flex">
+                  <p className="pr-3">Resume</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="size-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                    />
+                  </svg>
                 </div>
               </Link>
             </div>

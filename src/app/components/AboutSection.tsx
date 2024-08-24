@@ -34,6 +34,8 @@ const AboutSection: React.FC = () => {
               <li className="mb-2">
                 Flash ActionScript Coder (Oct 2007 - Jan 2009)
               </li>
+              <li className="mb-2">Web Designer (2007)</li>
+              <li className="mb-2">System Architect</li>
             </ul>
           </div>
 
@@ -45,10 +47,10 @@ const AboutSection: React.FC = () => {
               <div className="text-lg">Skills</div>
             </div>
             <ul className="mt-5 ml-7">
+              <li className="mb-2">Kotlin - Jetpack Compose</li>
               <li className="mb-2">JavaScript, TypeScript - React, Next.js</li>
               <li className="mb-2">CSS - Tailwind, Bootstrap</li>
               <li className="mb-2">Python, C#, Java</li>
-              <li className="mb-2">Kotlin - Jetpack Compose</li>
             </ul>
           </div>
         </div>
@@ -63,13 +65,19 @@ const AboutSection: React.FC = () => {
             </div>
             <ul className="mt-5 ml-7">
               <li className="mb-2">
-                <p>Software Development: 2-year Diploma</p>
+                <p>
+                  <span className="font-semibold">Software Development</span>:
+                  2-year Diploma
+                </p>
                 <p className="pl-10">
                   at Southern Alberta Institute of Technology (SAIT)
                 </p>
               </li>
               <li className="mb-2">
-                <p>Applied Mathematics: Bachelor of Science</p>
+                <p>
+                  <span className="font-semibold">Applied Mathematics</span>:
+                  Bachelor of Science
+                </p>
                 <p className="pl-10">at Osaka Women&apos;s University</p>
               </li>
             </ul>

@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
               id="email"
               required
               className="bg-white border border-textBoxBorder active:border-white placeholder-[#9CA2A9] text-customGray text-sm rounded-lg block w-full p-2.5"
-              placeholder="sample@gmail.com"
+              placeholder="sample@sample.com"
               disabled={isSubmit}
             />
           </div>
