@@ -13,16 +13,17 @@ const HeroSection: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12  px-10 sm:px-20">
         <div className="col-span-7 place-self-center">
           <h1 className="text-customGray text-2xl sm:text-3xl lg:text-4xl mb-5 font-semibold fadeLeft">
-            I am Taeko, a coding lover.
+            I am Taeko, an AI Enthusiast.
           </h1>
           <p className="text-customGray text-lg lg:text-xl sm:mt-8 sm:mb-12 fadeLeft">
-            I have experience as a system administrator, web designer, Flash
-            developer, and system architect in Japan. <br />
-            Currently, I am studying Software Development at SAIT in Calgary,
-            Canada.
+            I have experience as a system and application administrator, web
+            designer, and system architect in Japan. <br />
+            Currently pursuing a Software Development diploma at SAIT in
+            Calgary.
             <br />I have discovered a passion for{" "}
-            <span className="font-semibold">mobile development</span> and keen
-            to enhance my app-building skills.
+            <span className="font-semibold">Gen AI capabilities</span> and keen
+            to enhance my ability for test automation (Selenium), mobile
+            development (Kotlin), and web development (React, TypeScript).
           </p>
           <div className="flex flex-wrap  items-center mt-5 fadeLeft">
             <div className="mr-5">
