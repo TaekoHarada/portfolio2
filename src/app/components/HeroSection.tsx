@@ -21,9 +21,12 @@ const HeroSection: React.FC = () => {
             Currently pursuing a Software Development diploma at SAIT in
             Calgary.
             <br />I have discovered a passion for{" "}
-            <span className="font-semibold">Gen AI capabilities</span> and keen
-            to enhance my ability for test automation (Selenium), mobile
-            development (Kotlin), and web development (React, TypeScript).
+            <span className="font-semibold">
+              Generative AI capabilities
+            </span>{" "}
+            and keen to enhance my ability for test automation (Selenium),
+            mobile development (Kotlin), and web development (React,
+            TypeScript).
           </p>
           <div className="flex flex-wrap  items-center mt-5 fadeLeft">
             <div className="mr-5">
