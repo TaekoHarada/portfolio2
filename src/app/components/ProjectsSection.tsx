@@ -41,7 +41,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <section
       id="Projects."
-      className="project-section sm:h-screen grid place-items-center pt-10 lg:pt-0"
+      className="project-section grid place-items-center pt-20"
     >
       <div>
         <h2 className="text-2xl w-full text-center my-10 bold">Projects</h2>

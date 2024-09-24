@@ -16,6 +16,7 @@ const menuItems = [
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-white bg-opacity-90 border border-t-1 border-gray-300">
       <div className="flex flex-wrap items-center justify-between mx-auto px-5 py-2">
@@ -25,6 +26,7 @@ const Navbar: React.FC = () => {
             <span className="ml-3 italic">Software Developer</span>
           </div>
         </Link>
+
         {/* For mobile */}
         <div className="mobile-menu block md:hidden">
           {menuOpen ? (
@@ -43,6 +45,7 @@ const Navbar: React.FC = () => {
             </button>
           )}
         </div>
+
         {/* For larger screen */}
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex flex-row">
@@ -54,7 +57,11 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
       </div>
-      {menuOpen ? <MenuOverlay links={menuItems} /> : null}
+
+      {/* Pass setMenuOpen(false) to MenuOverlay to close the menu when a link is clicked */}
+      {menuOpen ? (
+        <MenuOverlay links={menuItems} closeMenu={() => setMenuOpen(false)} />
+      ) : null}
     </nav>
   );
 };

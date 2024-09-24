@@ -25,6 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
   scroll-behavior: smooth;
+  @apply text-customGray;
 }
 
 @layer utilities {

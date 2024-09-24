@@ -13,7 +13,7 @@ const AboutSection: React.FC = () => {
   return (
     <section
       id="About."
-      className="about-section sm:h-screen grid place-items-center pt-10 lg:pt-0"
+      className="about-section sm:h-screen grid place-items-center px-3 pt-0"
     >
       <div>
         <h2 className="text-2xl w-full text-center my-10 bold">About me</h2>
@@ -47,10 +47,11 @@ const AboutSection: React.FC = () => {
               <div className="text-lg">Skills</div>
             </div>
             <ul className="mt-5 ml-7">
+              <li className="mb-2">Java - Selenium</li>
               <li className="mb-2">Kotlin - Jetpack Compose</li>
               <li className="mb-2">JavaScript, TypeScript - React, Next.js</li>
               <li className="mb-2">CSS - Tailwind, Bootstrap</li>
-              <li className="mb-2">Python, C#, Java</li>
+              <li className="mb-2">Python, C#</li>
             </ul>
           </div>
         </div>
