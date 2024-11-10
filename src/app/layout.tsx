@@ -8,7 +8,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio: Taeko",
+  title: "Portfolio: Taeko Harada",
   description: "Software developer Taeko's portfolio",
 };
 
