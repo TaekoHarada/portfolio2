@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
           <div className="flex flex-wrap  items-center mt-5 fadeLeft">
             <div className="mr-5">
               <Link
-                href="./docs/Resume-Taeko-Harada.pdf"
+                href="./docs/Resume-TaekoHarada.pdf"
                 target="_blank"
                 rel="Resume-Taeko-Harada"
               >

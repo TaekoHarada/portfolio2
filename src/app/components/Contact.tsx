@@ -163,7 +163,7 @@ const Contact: React.FC = () => {
         <div className="flex flex-wrap  items-center mt-5">
           <div className="mr-3">
             <Link
-              href="./docs/Resume-Taeko-Harada.pdf"
+              href="./docs/Resume-TaekoHarada.pdf"
               target="_blank"
               rel="Resume-Taeko-Harada"
             >
