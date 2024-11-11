@@ -24,9 +24,8 @@ const HeroSection: React.FC = () => {
             <span className="font-semibold">
               Generative AI capabilities
             </span>{" "}
-            and keen to enhance my ability for test automation (Selenium),
-            mobile development (Kotlin), and web development (React,
-            TypeScript).
+            and keen to enhance my ability for test automation, and web
+            development.
           </p>
           <div className="flex flex-wrap  items-center mt-5 fadeLeft">
             <div className="mr-5">
