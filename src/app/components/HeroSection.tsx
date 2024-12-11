@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
       className="hero-section sm:h-screen grid place-items-center pt-20"
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 px-10 sm:px-20">
-        <div className="col-span-7 place-self-center">
+        <div className="col-span-6 place-self-center">
           <h1 className="text-customGray text-2xl sm:text-3xl lg:text-4xl mb-5 font-semibold fadeLeft">
             Hello, I am Taeko.
           </h1>
@@ -71,15 +71,16 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="col-span-5 place-self-center m-10 lg:m-0 fadeIn">
+        <div className="col-span-6 place-self-center m-10 lg:m-0 fadeIn">
           {/* YouTube Movie Section */}
-          <div className="w-full h-full aspect-video fadeLeft">
+          <div className="w-full aspect-video fadeLeft">
             <iframe
               src="https://www.youtube.com/embed/sUYDcfNTcgg"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              className="rounded-lg shadow-md"
+              height={315}
+              // className="rounded-lg"
             ></iframe>
           </div>
           {/*         
