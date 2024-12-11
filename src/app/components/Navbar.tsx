@@ -22,8 +22,10 @@ const Navbar: React.FC = () => {
       <div className="flex flex-wrap items-center justify-between mx-auto px-5 py-2">
         <Link href="#Hero.">
           <div className="text-gray-800 hover:text-blue-500">
-            <span className="text-lg font-semibold">Taeko H.</span>
-            <span className="ml-3 italic">Software Developer</span>
+            <span className="text-lg font-semibold">Taeko Harada</span>
+            <span className="ml-3 italic">
+              Software Developer, IT Administrator
+            </span>
           </div>
         </Link>
 

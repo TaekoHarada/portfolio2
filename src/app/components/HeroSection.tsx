@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -10,24 +9,20 @@ const HeroSection: React.FC = () => {
       id="Hero."
       className="hero-section sm:h-screen grid place-items-center pt-20"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-12  px-10 sm:px-20">
+      <div className="grid grid-cols-1 lg:grid-cols-12 px-10 sm:px-20">
         <div className="col-span-7 place-self-center">
           <h1 className="text-customGray text-2xl sm:text-3xl lg:text-4xl mb-5 font-semibold fadeLeft">
-            I am Taeko, an AI Enthusiast.
+            Hello, I am Taeko.
           </h1>
-          <p className="text-customGray text-lg lg:text-xl sm:mt-8 sm:mb-12 fadeLeft">
-            I have experience as a system and application administrator, web
-            designer, and system architect in Japan. <br />
-            Currently pursuing a Software Development diploma at SAIT in
-            Calgary.
-            <br />I have discovered a passion for{" "}
-            <span className="font-semibold">
-              Generative AI capabilities
-            </span>{" "}
-            and keen to enhance my ability for test automation, and web
-            development.
-          </p>
-          <div className="flex flex-wrap  items-center mt-5 fadeLeft">
+
+          <div className="text-customGray text-lg lg:text-xl sm:mt-8 sm:mb-12 fadeLeft">
+            With a background as a System and Application Administrator in Japan
+            and recent graduation from the Software Development program at SAIT
+            in Calgary, I am passionate about contributing to IT systems and
+            software development to help businesses grow efficiently.
+          </div>
+
+          <div className="flex flex-wrap items-center mt-5 fadeLeft">
             <div className="mr-5">
               <Link
                 href="./docs/Resume-TaekoHarada.pdf"
@@ -75,14 +70,26 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
         </div>
+
         <div className="col-span-5 place-self-center m-10 lg:m-0 fadeIn">
+          {/* YouTube Movie Section */}
+          <div className="w-full h-full aspect-video fadeLeft">
+            <iframe
+              src="https://www.youtube.com/embed/sUYDcfNTcgg"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="rounded-lg shadow-md"
+            ></iframe>
+          </div>
+          {/*         
           <div className="rounded-full bg-[#e1f0ff] bg-opacity-70 p-3">
             <img
               src="/images/portrait.png"
               alt="My portrait"
               className="w-[115px] h-[115px] sm:w-[200px] sm:h-[200px] rounded-full "
             ></img>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
