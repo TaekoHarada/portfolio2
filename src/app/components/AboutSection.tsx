@@ -50,10 +50,9 @@ const AboutSection: React.FC = () => {
               <li className="mb-2">
                 JavaScript, TypeScript - React, Next.js, Node.js
               </li>
+              <li className="mb-2">Python</li>
               <li className="mb-2">Java - Selenium</li>
-              <li className="mb-2">Python, C#</li>
-              <li className="mb-2">Kotlin - Jetpack Compose</li>
-              <li className="mb-2">CSS - Tailwind, Bootstrap</li>
+              <li className="mb-2">Linux</li>
             </ul>
           </div>
         </div>
