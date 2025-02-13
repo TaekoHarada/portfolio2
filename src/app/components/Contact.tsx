@@ -161,7 +161,7 @@ const Contact: React.FC = () => {
         </form>
 
         <div className="flex flex-wrap  items-center mt-5">
-          <div className="mr-3">
+          {/* <div className="mr-3">
             <Link
               href="./docs/Resume-TaekoHarada.pdf"
               target="_blank"
@@ -171,7 +171,7 @@ const Contact: React.FC = () => {
                 Download Resume
               </div>
             </Link>
-          </div>
+          </div> */}
           <div className="flex mt-3 sm:mt-0">
             <div className="mr-2 text-gray-800 hover:opacity-70">
               <Link

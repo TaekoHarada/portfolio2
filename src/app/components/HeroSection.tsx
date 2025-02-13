@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
           </div>
 
           <div className="flex flex-wrap items-center mt-5 fadeLeft">
-            <div className="mr-5">
+            {/* <div className="mr-5">
               <Link
                 href="./docs/Resume-TaekoHarada.pdf"
                 target="_blank"
@@ -47,7 +47,7 @@ const HeroSection: React.FC = () => {
                   </svg>
                 </div>
               </Link>
-            </div>
+            </div> */}
             <div className="flex mt-3 sm:mt-0">
               <div className="mr-2 text-gray-800 hover:opacity-70">
                 <Link

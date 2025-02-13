@@ -13,7 +13,7 @@ const AboutSection: React.FC = () => {
   return (
     <section
       id="About."
-      className="about-section sm:h-screen grid place-items-center px-3 pt-0"
+      className="about-section lg:h-screen grid place-items-center px-3 pt-0"
     >
       <div>
         <h2 className="text-2xl w-full text-center my-10 bold">About me</h2>
@@ -94,6 +94,10 @@ const AboutSection: React.FC = () => {
               <div className="text-lg">Certifications</div>
             </div>
             <ul className="mt-5 ml-7">
+              <li className="mb-2">Google IT Support Specialist (2025)</li>
+              <li className="mb-2">
+                AZ-900 Microsoft Azure Fundamentals (2025)
+              </li>
               <li className="mb-2">AWS Cloud Practitioner (2024)</li>
             </ul>
           </div>

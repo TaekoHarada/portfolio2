@@ -37,7 +37,7 @@ const NewsSection: React.FC = () => {
   }, []);
 
   return (
-    <section id="TechNews." className="hidden sm:block py-10">
+    <section id="TechNews." className="hidden lg:block py-10">
       <div>
         <div className="flex flex-col justify-end text-2xl bold w-full text-center mb-10  sm:h-48">
           Tech News
